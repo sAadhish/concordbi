@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Application data
+data/raw/
+data/processed/
+
+# Secrets
+*.pem
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
