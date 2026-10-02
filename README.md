@@ -22,3 +22,13 @@ and generate evidence-backed audit findings.
 - Nebius Token Factory
 - SQLite
 - Dockergit init
+
+
+
+'''
+git switch -c feature/change-detection
+git branch
+git add .
+git commit -m "feat: add metric change detection"
+git push -u origin feature/change-detection 
+'''

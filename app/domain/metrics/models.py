@@ -13,23 +13,16 @@ class MetricChange(BaseModel):
 class MetricDefinition(BaseModel):
     metric_id: str
     name: str
-
     source_asset: str
     source_type: str
-
     measure: Optional[str] = None
     aggregation: Optional[str] = None
-
     filters: List[str] = Field(default_factory=list)
-
     base_table: Optional[str] = None
     joins: List[str] = Field(default_factory=list)
-
     grain: Optional[str] = None
-
     definition: str
     definition_language: Optional[str] = None
-
     description: Optional[str] = None
 
 
