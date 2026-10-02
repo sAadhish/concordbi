@@ -32,3 +32,18 @@ class MetricVersion(BaseModel):
     snapshot_id: str
     definition: str
     created_at: datetime
+
+
+from pydantic import BaseModel, Field
+
+
+class NormalizedMetricDefinition(BaseModel):
+    measure: str
+    aggregation: str
+    filters: list[str] = Field(default_factory=list)
+    base_table: str | None = None
+    joins: list[str] = Field(default_factory=list)
+    grain: str | None = None
+    parser: str
+    parse_status: str = "complete"
+    unsupported_expressions: list[str] = Field(default_factory=list)
